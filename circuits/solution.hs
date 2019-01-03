@@ -1,7 +1,3 @@
--- Bruno Vandekerkhove
--- s0216676
--- 3Ba Informatica
-
 module MyHaskell where
 
 import Data.List
