@@ -59,6 +59,9 @@ simplify (AND x y) = cand (simplify x) (simplify y)
 simplify (OR x y) = cnot (cand (cnot (simplify x)) (cnot (simplify y)))
 simplify (XOR x y) = simplify $ cor (cand (simplify x) (cnot (simplify y))) (cand (cnot (simplify x)) (simplify y))
 
+-- Functions below use simplify though model solution doesn't
+-- https://en.wikipedia.org/wiki/NAND_logic
+
 -- Task 2c
 
 size :: Circuit -> Int
