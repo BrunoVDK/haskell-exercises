@@ -1,4 +1,4 @@
-module Expense where
+module Shopping where
 
 import Data.List
 import Data.Maybe
